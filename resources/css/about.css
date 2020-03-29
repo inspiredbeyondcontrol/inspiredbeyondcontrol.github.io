@@ -1,0 +1,96 @@
+/* 
+Fonts for Inspired Beyond Control:
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Slab', serif;
+
+Color Palette:
+    #2295D4 - inspired blue
+    #3178EB - bold blue
+    #F0FAFF - blue creme
+*/
+
+
+/* Basic Styles */
+
+
+main {
+    height: 83vh;
+    margin-top: 10vh;
+    
+    
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    overflow: scroll;
+}
+
+.flex {
+    display: flex;
+}
+
+section {
+    margin-bottom: 5vh;
+    padding: 2vh 13vh;
+}
+
+.blue {
+    background-color: rgb(120, 200, 250);
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+    
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    
+}
+ 
+main p,
+main ul li {
+    line-height: 1.25;
+}
+
+/* Section - Who Am I */
+
+.who img {
+    height: 30rem;
+    width: auto;
+    
+    box-shadow: 12px 12px rgb(120, 200, 250);
+}
+
+.who div {
+    margin-left: 7vh;
+    margin-right: 3vh;
+    padding-top: 10vh;
+}
+
+.who p:first-of-type {
+    margin-bottom: 3.4rem;
+}
+
+.who p {
+    font-size: 1.32rem;
+}
+
+#inspired {
+    margin-top: 1.6rem;
+    
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.2rem;
+    text-shadow: 3px 3px #F0FAFF;
+}
+
+#email {
+    padding-top: .85rem;
+/*    padding-left: 5rem;*/
+}
+
+
+/* Section - Education */
+
+.education div {
+    padding-bottom: .75rem;
+}
+
+.education 

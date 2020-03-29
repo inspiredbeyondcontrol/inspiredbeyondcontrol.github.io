@@ -1,0 +1,202 @@
+/* 
+Fonts for Inspired Beyond Control:
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Slab', serif;
+
+Color Palette:
+    #2295D4 - inspired blue
+    #3178EB - bold blue
+    #F0FAFF - blue creme
+
+NEW inspired blue?   color: [10, 133, 250]
+
+*/
+
+
+/* Header & Footer for inspiredbeyondcontrol.com */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: border-box;
+    
+    font-size: 18px;
+} 
+
+header,
+footer {
+    white-space: nowrap;
+    
+    color: #2295D4;
+    font-family: 'Josefin Slab', serif;
+    
+    background-color: #F0FAFF;
+    
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    
+    height: 10vh;
+    width: 100%;
+    
+    border-bottom: 2px solid #2295D4;
+}
+
+header h1 {
+    margin-right: 5%;
+    
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.4vw;
+    font-weight: 700;
+    
+}
+
+/* Header */
+
+header h2 {
+    font-size: 2.15vw;
+    font-style: italic;
+}
+
+header h1,
+header h2{
+    padding-top: 1.2%;
+}
+
+header h1:hover {
+    color: #3178EB;
+}
+
+header h2:hover {
+    color: #3178EB;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2vh;
+    
+    height: 7vh;
+    
+    border-top: 2px solid #2295D4;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+footer nav ul li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.45vw;
+    font-weight: 700; 
+}
+
+footer nav ul li:hover {
+    color: #3178EB;
+    text-decoration: underline;
+}
+
+#copy {
+/*
+    padding-top: .7rem;
+    padding-right: .4rem;
+*/
+    padding-top: .25vw;
+    padding-right: .75vw;
+    text-align: right; 
+    font-size: .85vw;
+}
+
+/* Media Queries */
+
+@media only screen and (orientation: portrait) {
+    
+    header, 
+    footer,
+    footer nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size:  6rem;
+    }
+    
+    header h2 {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* 
+@media only screen and (max-width: 375px and max-height: 812px) {
+    
+    header, 
+    footer {
+        display: block;
+        text-align: center;
+    }
+    
+    header h1 {
+        padding-bottom: .7rem;
+        font-size: 5rem;
+    }
+    
+    header h2 {
+        font-size: 1.75rem;
+    }
+    
+    footer nav {
+        padding-top: 1rem;
+    }
+    
+    footer nav ul li {
+        font-size: 2.5rem;
+    }
+    
+    #copy {
+        padding-top: 1.5rem;
+    }
+    
+}
+
+
+@media only screen and (max-height: 930px), (min-width: 1700px) {
+    
+    header {
+        padding-top: 1rem;
+    }
+    
+}
+
+
+@media only screen and (max-height: 880px) {
+    
+    footer, 
+    #copy {
+        padding-top: .4rem;
+    }
+    
+}
+
+@media only screen and (max-height: 770px) {
+    
+    #copy {
+        padding-right: .2rem;
+        font-size: .7rem;
+    }
+}
+*/

@@ -1,0 +1,74 @@
+/*
+
+
+Colors:
+
+#B3A89D - tree bark brown
+#EDFFF0 - creme green
+
+*/
+
+
+/* Basic styles */
+
+main {
+    height: 83vh;
+    margin-top: 10vh;
+    
+    background-color: #EDFFF0;
+    color: #B3A89D;
+    
+    overflow: scroll;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Section - Hike Header */
+
+.hike-header {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+.hike-header h1 {
+    font-size: 4rem;
+    padding-bottom: 1vh;
+}
+
+.hike-header h2 {
+    font-size: 1.75rem;
+}
+
+/* Section - Hike Intro */
+
+.hike-intro {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.hike-intro p,
+.hike-intro ul {
+    font-size: 1.35rem; 
+}
+
+.hike-intro p {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.hike-intro ul {
+    margin-left: 3vh;
+}
+
+.hike-intro ul li {
+    line-height: 1.4;
+    list-style-type: disc;
+}
+
+.hike-intro img {
+    max-width: 35%;
+}

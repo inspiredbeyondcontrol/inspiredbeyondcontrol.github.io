@@ -1,0 +1,181 @@
+/*
+TastyBlogs color palette:
+
+#49260A - chocolate
+#623B1C - dark brown
+#CAAD8C - light brown
+#F6EDDD - cream
+
+*/
+
+
+/* Basic styles */
+
+.tb-name,
+.tb-blogs {
+    display: flex;
+}
+
+.tb-nav {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+main {
+    height: 83vh;
+    margin-top: 10vh;
+    color: #F6EDDD;
+    background-color: #49260A;
+    
+    overflow: scroll;
+}
+
+main img {
+    height: 15rem;
+    width: 20rem;
+    margin-bottom: 5%;
+}
+
+.tb-header,
+.tb-blogs {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* Section - TastyBlogs Header */
+
+.tb-header {
+    margin: 2.5% 2.5% 5%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tb-name {
+    align-items: baseline;
+    text-align: center;
+    margin-left: 17%;
+    margin-bottom: 1.75%;
+}
+
+
+.tb-nav li {
+    margin-right: 1.2rem;
+}
+
+main h1 {
+    font-family: yellowtail, cursive;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    
+    margin-right: 10%;
+}
+
+main h2 {
+    font-size: 2.15rem;
+    font-style: italic;
+    color: #CAAD8C;
+}
+
+.tb-nav li:hover {
+    color: #CAAD8C;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#tb-searchbox {
+    margin-left: 7%;
+}
+
+/* Section - Tasty Blogs articles */
+
+.tb-blogs {
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+main h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+
+main h3,
+main h4,
+main h5 {
+    text-align: center;
+}
+
+.tb-blogs article {
+    margin-right: 5%;
+}
+
+.tb-blogs aside {
+    margin-left: 10%;
+}
+
+
+/* Media Queries */
+
+@media only screen and (orientation: portrait) {
+    
+    .tb-header,
+    .tb-name,
+    .tb-nav,
+    .tb-blogs {
+        display: block;
+        text-align: center;
+    }
+    
+    main img {
+        height: 9rem;
+        width: 12rem;
+        margin-bottom: 1%;
+    }
+    
+    main h1 {
+        font-size: 2.55rem;
+    }
+
+    main h2 {
+        font-size: 1.35rem;
+    }
+    
+    main h3 {
+        font-size: 1.15rem;
+    }
+
+    main h4 {
+        font-size: 1.05rem;
+    }
+
+    main h5 {
+        font-size: .95rem;
+    }
+    
+    .tb-blogs article {
+        
+    }
+    
+    .tb-nav li,
+    .tb-blogs p {
+        font-size: .85rem;
+    }
+    
+    aside {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 1rem;
+    }
+    
+}

@@ -1,0 +1,144 @@
+/*
+
+Fonts for Inspired Beyond Control:
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-family: 'Josefin Slab', serif;
+
+Color Palette:
+    #2295D4 - inspired blue
+    #3178EB - bold blue
+    #F0FAFF - blue creme
+
+NEW inspired blue?   color: [10, 133, 250]
+
+
+*/
+
+/* Basic Styles */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: border-box;
+} 
+
+html {
+    background: url(../pics/landscape-greyscale.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    color: #F0FAFF;
+}
+
+body {
+    
+}
+
+header,
+footer {
+    white-space: nowrap;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 5vh;
+    height: 15vh;
+}
+
+
+
+h1 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h1:hover, 
+h2:hover {
+    text-decoration: underline;
+}
+
+
+/* Main section - Intro & Pic */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(240,250,255, 0), 
+        rgba(240,250,255, 0.3), 
+        rgba(240,250,255, 0.6), 
+        rgba(240,250,255, 0.7), 
+        rgba(240,250,255, 0.7),
+        rgba(240,250,255, 0.7), 
+        rgba(240,250,255, 0.7),
+        rgba(240,250,255, 0.6),
+        rgba(240,250,255, 0.3),
+        rgba(240,250,255, 0));
+    max-height: 70vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+img {
+    height: 45vh;
+    border-radius: 50%;
+}
+
+#intro-p {
+    font-size: 2.25rem;
+    max-width: 45%;
+    margin-top: 3rem;
+    margin-right: 10rem;
+}
+
+p span:hover {
+    color: #2295D4;
+}
+
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    height: 10vh;
+}
+
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-bottom: .95rem;
+}
+
+footer nav ul li {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 1.6rem;
+}
+
+footer nav ul li:hover {
+    text-decoration: underline;
+}
+
+#copy {
+    text-align: right;
+    margin-right: .65rem;
+    font-weight: 500;
+}

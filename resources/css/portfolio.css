@@ -1,0 +1,64 @@
+/* 
+Fonts for Inspired Beyond Control:
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Slab', serif;
+
+Color Palette:
+    #2295D4 - inspired blue
+    #3178EB - bold blue
+    #F0FAFF - blue creme
+*/
+
+
+/* Basic Styles */
+
+main {
+    height: 83vh;
+    margin-top: 10vh;
+    padding-top: 5%;
+/*    padding-left: 5%;*/
+    overflow: scroll;
+}
+
+main img {
+    width: 20vw;
+}
+
+/* Grid - Portfolio section */
+
+.grid {
+    display: grid;
+    margin-left: 15vw;
+    max-width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12vh 5vw;
+
+}
+
+
+
+.grid img:hover {
+    width: 25vw;
+}
+
+
+/* Media Queries */
+
+@media only screen and (orientation: portrait) {
+    .grid {
+        display: block; 
+    }
+    
+    main img {
+        width: 70%;
+        margin-top: 6rem;
+        margin-left: 5%;
+    }
+    
+    .grid img:hover {
+        width: 70%;
+    }
+    
+    
+    
+}

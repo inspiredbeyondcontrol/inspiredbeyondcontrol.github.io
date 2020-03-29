@@ -1,0 +1,193 @@
+/*
+
+Hunger No More Color Palettes:
+
+    #F8B400 - wheat yellow
+    #785800 - bright brown
+    #786124 - faded brown
+    #4A4A36 - wheat grey
+    #FAF5E4 - wheat cream
+
+Hunger No More Font Families:
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo Bhai', cursive;
+
+*/
+
+
+/* Universal Styles */
+
+main {
+    height: 83vh;
+    margin-top: 10vh;
+    
+    font-family: 'Roboto', sans-serif;
+    color: #F8B400;
+    background-color: #4A4A36;
+    
+    overflow: scroll;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex h3 {
+    white-space: nowrap;
+}
+
+main p {
+    font-size: 1.15rem;
+}
+
+
+/* Section - Header */
+
+.hg-header {
+    border-bottom: 4px solid #F8B400;
+}
+
+.hg-header nav {
+    margin-bottom: .35rem;
+}
+
+.hg-header img {
+    height: 12vh;
+    margin-top: 2vh;
+}
+
+.hg-header nav {
+    margin-top: 7%;
+    
+    text-align: end;
+}
+
+.hg-header nav ul li {
+    margin-right: .75rem;
+    
+    font-size: 1.15rem;
+}
+
+.navLink:hover {
+    color: #000;
+    background-color: #F8B400;
+}
+
+
+/* Section - Our Dream */
+
+.dream {
+    height: 30rem;
+    padding-top: 1.5%;
+    padding-bottom: 4.5%;
+    
+    color: #786124;
+    background-color: #FAF5E4;
+    
+    border-bottom: 4px solid #786124;
+}
+
+.dream h3 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.75rem;
+    padding-top: 1.5rem;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.dream p {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    width: 55%;
+    
+    line-height: 1.4;
+}
+
+.dream p span {
+    font-weight: 900;
+}
+
+.dream img {
+    margin-right: 10%;
+    width: 30%;
+    
+    box-shadow: -5px 5px #4A4A36;
+}
+
+/* Section - Join Us */
+
+.joinUs {
+    height: 50rem;
+    
+    color: #786124;
+    
+    background-image: linear-gradient(rgba(242, 235, 226, 0.8), rgba(242, 235, 226, 0.8)), 
+        url(../pics/volunteer-team.png);
+    background-size: cover;
+}
+
+.joinUs h3 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.75rem;
+    padding-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+#what {
+    margin-left: 15rem;
+}
+
+#success {
+    margin-right: 10rem;
+}
+
+.joinUs p,
+.joinUs li {
+    width: 40rem;
+    line-height: 1.4;
+}
+
+.joinUs p,
+.joinUs ul { 
+    margin-bottom: 2%; 
+}
+
+quote {
+    font-style: italic;
+}
+
+button {
+    margin: 5rem auto;
+    display: block;
+    padding: .35rem 1.25rem;
+    
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.75rem;
+    color: #786124;
+    
+    background-color: #FAF5E4;
+    border: 3px solid #786124;
+    border-radius: 20px;
+}
+
+/* Section - Footer */
+
+.hg-footer {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (orientation: portrait) {
+    .hg-header,
+    .dream,
+    .joinUs,
+    .hg-footer{
+        display: block;
+        text-align: center;
+    }
+}
