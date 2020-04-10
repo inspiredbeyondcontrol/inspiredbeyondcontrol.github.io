@@ -18,14 +18,15 @@
         
         <main>
             <container class="about">
-                <img class="me" src="resources/pics/me%20money.png">
-                <section class="resume" >
+                <img id="myPic" src="resources/pics/me_working.jpeg">
+                <div id="text-fade"></div>
+                <section class="resume">
                     <section id="who">
                         <h3>Who am i?</h3>
                         <p>A self-driven &amp; passionate developer wanting to make a positive impact on the world through web development &amp; design. I've been teaching myself coding and UX design since the summer of 2017, utilizing some amazing online resources, such as Treehouse and&nbsp;Codecademy.</p>
-                        <button id="email"><a href="mailto:inspired.beyondcontrol@gmail.com">Email Me</a></button>
+                        <button class="email"><a href="mailto:inspired.beyondcontrol@gmail.com">Email Me</a></button>
                     </section>
-                    <section id="education">
+                    <section class="section-gap">
                         <h3>Completed Education</h3> 
                         <div>
                             <h4>Team Treehouse - Online Course</h4>
@@ -43,7 +44,7 @@
                     <section>
                         <h3>My Tool Bag</h3>
                         <ul>
-                            <li>HTML, HTML5</li>
+                            <li>HTML</li>
                             <li>CSS</li>
                             <li>Google Dev Tools</li>
                             <li>Git, GitHub</li>
@@ -61,30 +62,24 @@
                             <li>Ruby/Rails</li>
                             <li>React, JSX</li>
                             <li>PHP</li>
-                            <li>Express</li>
-                            <li>Bash scripting</li>
                             <li>jQuery</li>
                             <li>MySQL</li>
                             <li>Python</li>
                         </ul>
                     </section>
-                    <section>
+                    <section class="experience section-gap">
                         <h3>Experience</h3>
                         <div>
                             <h4>BeyondTrust Corp - Aliso Viejo CA</h4>
-                            <p>Sr. Service Desk Analyst</p>
-                            <p>11/2012 – Current</p>
+                            <h5>Sr. Service Desk Analyst - 11/2012 to Current</h5>
                             <p>Promoted from Helpdesk Technician to Sr. Service Desk Analyst in September 2018. Level 1 &amp; 2 support for ServiceDesk; internal desktop support for Aliso Viejo office; remote support for the company (currently over 1,000 empl0yees); currently using ServiceNow for support tickets, hardware asset management, and our internal Knowledgebase; daily tasks include troubleshooting tickets, day-to-day hardware/software issues, provide software licenses, assist with updating/upkeeping the Knowledgebase &amp; other internal IT documentation; onboarding/offboarding employees; assisting the Service Management and Infrastructure teams with projects, etc. </p>
                         </div>
                         <div>
                             <h4>BMW &amp; MINI of Escondido - Escondido CA </h4>
-                            <p>IT Administrator</p>
-                            <p>3/2006 – 11/2012</p>
+                            <h5>IT Administrator - 3/2006 to 11/2012</h5>
                             <p>Computer hardware &amp; software support for the dealership, including 4 locations: BMW  Sales,  MINI  Sales,  BMW/MINI  Service,  and  Collision  Repair  center; perform regular maintenance &amp; updates for BMW ISIS software used by service technicians to perform diagnostics &amp; configurations for BMW vehicles; be available on-call for after hour &amp; weekend issues.</p> 
                         </div>  
                     </section>
-                    <div id="text-fade">
-                    </div>
                 </section>
             </container>
         </main>
@@ -94,12 +89,13 @@
         <footer>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="https://www.etsy.com/shop/InspiredBeyondCtrl" target="_blank">My Etsy Store</a></li>    
+                    <li class="fire"><a href="index.html">Home</a></li>
+                    <li class="fire"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="fire"><a href="https://www.etsy.com/shop/InspiredBeyondCtrl" target="_blank">My Etsy Store</a></li>    
                 </ul>
             </nav>
             <p id="copy">&copy; 2020 Christopher Adams</p>
         </footer>
     </body>
+    <script src="resources/js/changeMyPic.js"></script>
 </html>

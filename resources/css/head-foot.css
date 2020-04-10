@@ -44,6 +44,8 @@ html {
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
     color: #F0FAFF;
+    
+    max-width: 100%;
 }
 
 header,
@@ -64,7 +66,7 @@ header {
     top: 0;
     
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 3vh;
     height: 10vh;
 }
 
@@ -90,7 +92,7 @@ h2 {
 
 main {
     height: 75vh;
-    width: 100vw;
+    max-width: 100vw;
     
     margin-top: 15vh;
     margin-bottom: 2rem;
@@ -137,7 +139,7 @@ footer nav ul li {
 
 @keyframes rainbow {
     0% {
-        color: #FFFFB2;  
+        color: #FFFFB2;
     }
     
     16.666% {
@@ -162,8 +164,7 @@ footer nav ul li {
     
     100% {
         color: #B20000;
-    }
-    
+    }  
 }
 
 /* Footer - Copyright */
@@ -180,7 +181,7 @@ footer nav ul li {
 
 /* Media Queries for Responsive Design */
 
-    /* Portrait Design */
+    /* Portrait - Generic */
 
 @media only screen and (orientation: portrait) {
     

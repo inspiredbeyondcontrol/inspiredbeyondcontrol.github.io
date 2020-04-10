@@ -11,22 +11,21 @@
 
 main {
     padding-top: 5%;
-/*    padding-left: 5%;*/
 }
 
-main img {
-    width: 20vw;
+.portfolio img {
+    width: 25vw;
 }
 
 /* Grid - Portfolio section */
 
 .portfolio {
     display: grid;
-    margin-left: 15vw;
-    max-width: 80vw;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12vh 5vw;
-
+    
+    margin-left: 15vw;
+    max-width: 80vw;
 }
 
 
@@ -36,23 +35,60 @@ main img {
 }
 
 
-/* Media Queries */
+/* Media Queries for Responsive Design */
+
+    /* Portrait - Generic */
 
 @media only screen and (orientation: portrait) {
-    .grid {
-        display: block; 
+    
+    .portfolio {
+        display: block;
     }
     
-    main img {
-        width: 70%;
-        margin-top: 6rem;
-        margin-left: 5%;
+    .portfolio img {
+        width: 60vw;
+        margin-bottom: 8rem;
     }
-    
-    .grid img:hover {
-        width: 70%;
-    }
-    
-    
-    
+  
+}
+
+    /* iPad Pro - Portrait */
+
+@media only screen 
+    and (device-height : 1366px)
+    and (device-width : 1024px)
+    and (orientation : portrait ) {
+        
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5vh 2vw;
+            margin-top: 7vh;
+            margin-left: 10vw;
+        }
+        
+        .portfolio img {
+            width: 30vw;
+        }
+}
+
+    /* iPad - Portrait */
+
+@media only screen 
+    and (device-height : 1024px)
+    and (device-width : 768px)
+    and (orientation : portrait ) {
+        
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5vh 2vw;
+            margin-top: 7vh;
+            margin-left: 10vw;
+        }
+        
+        .portfolio img {
+            width: 30vw;
+        }
+        
 }
