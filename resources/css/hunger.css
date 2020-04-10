@@ -1,6 +1,14 @@
+/*===================================================================
+    * Styles for ABOUT page
+    * See'head-foot.css' for:
+        * styles for Header, Footer, Body basics 
+        * font family and type scale
+        * color palette for InspiredBeyondControl
+===================================================================*/
+
 /*
 
-Hunger No More Color Palettes:
+Hunger No More Color Palette:
 
     #F8B400 - wheat yellow
     #785800 - bright brown
@@ -19,14 +27,9 @@ Hunger No More Font Families:
 /* Universal Styles */
 
 main {
-    height: 83vh;
-    margin-top: 10vh;
-    
     font-family: 'Roboto', sans-serif;
     color: #F8B400;
     background-color: #4A4A36;
-    
-    overflow: scroll;
 }
 
 .flex {

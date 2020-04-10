@@ -1,202 +1,326 @@
+/* Header & Footer for inspiredbeyondcontrol.github.io */
+
 /* 
 Fonts for Inspired Beyond Control:
-    font-family: 'Amatic SC', cursive;
+    font-family: 'IM Fell Great Primer SC', serif;
     font-family: 'Josefin Slab', serif;
+
+Font Scale for 20px:
+    3.052rem (61.04px)
+    2.441rem (48.83px)
+    1.953rem (39.06px)
+    1.563rem (31.25px)
+    1.25rem (25.00px)
+    1rem (20.00px)
+    0.8rem (16.00px)
+    0.64rem (12.80px
+
 
 Color Palette:
     #2295D4 - inspired blue
     #3178EB - bold blue
-    #F0FAFF - blue creme
+    #F0FAFF - blue creme  - rgb (240,250,255)
 
 NEW inspired blue?   color: [10, 133, 250]
 
 */
 
 
-/* Header & Footer for inspiredbeyondcontrol.com */
+/* Basic styles */
 
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: border-box;
-    
-    font-size: 18px;
 } 
+
+html {
+    background: url(../pics/landscape-greyscale.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    color: #F0FAFF;
+}
 
 header,
 footer {
     white-space: nowrap;
-    
-    color: #2295D4;
-    font-family: 'Josefin Slab', serif;
-    
-    background-color: #F0FAFF;
-    
-    z-index: 2;
+    z-index: 10;
 }
+
+
+/* HEADER */
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
+    
     position: fixed;
     top: 0;
     
-    height: 10vh;
     width: 100%;
-    
-    border-bottom: 2px solid #2295D4;
+    padding-top: 5vh;
+    height: 10vh;
 }
 
-header h1 {
-    margin-right: 5%;
-    
-    font-family: 'Amatic SC', cursive;
-    font-size: 3.4vw;
+h1 {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 3.052rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.953rem;
     font-weight: 700;
+}
+
+h1,
+h2 {
+    text-shadow: 2px 2px #474747, 
+        3px 3px #474747;
+}
+
+
+/* MAIN basic styles */
+
+main {
+    height: 75vh;
+    width: 100vw;
     
+    margin-top: 15vh;
+    margin-bottom: 2rem;
+    
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+    overflow: scroll;
 }
 
-/* Header */
 
-header h2 {
-    font-size: 2.15vw;
-    font-style: italic;
-}
+/* FOOTER */
 
-header h1,
-header h2{
-    padding-top: 1.2%;
-}
-
-header h1:hover {
-    color: #3178EB;
-}
-
-header h2:hover {
-    color: #3178EB;
-}
-
-/* Footer */
 
 footer {
     position: fixed;
     bottom: 0;
+    
     width: 100%;
-    padding-top: 2vh;
-    
-    height: 7vh;
-    
-    border-top: 2px solid #2295D4;
+    height: 10vh;
 }
+
 
 footer nav ul {
     display: flex;
-    justify-content: center;
     justify-content: space-around;
-    
+    align-items: baseline;
+    padding-top: 2rem;
+    padding-bottom: .9rem;
 }
 
 footer nav ul li {
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.45vw;
-    font-weight: 700; 
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 1.563rem;
+    text-shadow: 2px 2px #474747, 
+        3px 3px #474747;
 }
 
-footer nav ul li:hover {
-    color: #3178EB;
-    text-decoration: underline;
+/* Animation for Footer NAV */
+
+.fire:hover {
+    animation: rainbow 500ms ease 0s infinite normal forwards running;
 }
+
+@keyframes rainbow {
+    0% {
+        color: #FFFFB2;  
+    }
+    
+    16.666% {
+        color: #FFA500;
+    }
+    
+    33.333% {
+        color: #FFC04C;
+    }
+    
+    49.993% {
+        color: #FFB732;
+    }
+    
+    66.665% {
+        color: #FF1919;
+    }
+    
+    83.331% {
+        color: #E51616;
+    }
+    
+    100% {
+        color: #B20000;
+    }
+    
+}
+
+/* Footer - Copyright */
 
 #copy {
-/*
-    padding-top: .7rem;
-    padding-right: .4rem;
-*/
-    padding-top: .25vw;
-    padding-right: .75vw;
-    text-align: right; 
-    font-size: .85vw;
+    text-align: right;
+    font-size: 0.64rem;
+    font-weight: 500;
+    
+    margin-right: .65rem;
+    text-align: end;
 }
 
-/* Media Queries */
+
+/* Media Queries for Responsive Design */
+
+    /* Portrait Design */
 
 @media only screen and (orientation: portrait) {
     
-    header, 
-    footer,
-    footer nav ul {
+     /* HEADER */
+    
+        header {
         display: block;
         text-align: center;
-    }
+        }
+
+        header h1 {
+            font-size: 3.052rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: .3rem;
+        }
+
+        header h2 {
+            font-size: 1.953rem;
+        }
+}
+
+
+    /* iPhone X, 8/7/6 Plus - Portrait */
+
+@media only screen 
+    and (max-device-width : 414px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait ) {
+        
     
-    header h1 {
-        font-size:  6rem;
-    }
+        /* FOOTER */
     
-    header h2 {
-        font-size: 3rem;
-    }
+        footer nav ul {
+            padding-bottom: 1.5rem;
+        }
+        
+        footer nav ul li {
+            font-size: 1.953rem;
+        }  
 }
 
 
 
-/* 
-@media only screen and (max-width: 375px and max-height: 812px) {
-    
-    header, 
-    footer {
-        display: block;
-        text-align: center;
-    }
-    
-    header h1 {
-        padding-bottom: .7rem;
-        font-size: 5rem;
-    }
-    
-    header h2 {
-        font-size: 1.75rem;
-    }
-    
-    footer nav {
-        padding-top: 1rem;
-    }
-    
-    footer nav ul li {
-        font-size: 2.5rem;
-    }
-    
-    #copy {
-        padding-top: 1.5rem;
-    }
-    
+    /* iPhone X, 8/7/6 Plus - Landscape */
+
+@media only screen 
+    and (max-device-height : 414px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) {
+        
+         /* HEADER */
+        
+        h1 {
+            font-size: 1.953rem;
+        }
+        
+        h2 {
+            font-size: 1.563rem;
+        }
+        
+        /* FOOTER */
+        
+        footer nav ul {
+            padding-top: 0;
+            padding-bottom: .3rem;
+        }
+        
+        footer nav ul li {
+            font-size: 1rem;
+        }
+        
+        #copy {
+            font-size: 0.4rem;
+        }
+        
 }
 
 
-@media only screen and (max-height: 930px), (min-width: 1700px) {
-    
-    header {
-        padding-top: 1rem;
-    }
-    
+    /* iPad - Landscape */
+
+@media only screen 
+    and (max-device-height : 1536px) 
+    and (-webkit-device-pixel-ratio : 2)
+    and (orientation : landscape) {
+        
+        /* HEADER */
+        
+        h1 {
+            font-size: 1.953rem;
+        }
+        
+        h2 {
+            font-size: 1.563rem;
+        }
+        
+         /* FOOTER */
+        
+        footer nav ul {
+            padding-top: 0;
+            padding-bottom: .3rem;
+        }
+        
+        footer nav ul li {
+            font-size: 1.25rem;
+        }
+        
+        #copy {
+            font-size: 0.4rem;
+        }
 }
 
+/* Google Pixel 2XL & 2 - Landscape */
 
-@media only screen and (max-height: 880px) {
-    
-    footer, 
-    #copy {
-        padding-top: .4rem;
-    }
-    
-}
+@media only screen 
+    and (max-device-height : 411px)
+    and (orientation : landscape ) {
+        
+        /* HEADER */
+        
+        h1 {
+            font-size: 1.953rem;
+        }
+        
+        h2 {
+            font-size: 1.563rem;
+        }
+      
+        /* FOOTER */
+        
+        footer nav ul {
+            padding-top: 0;
+            padding-bottom: .3rem;
+        }
+      
+        footer nav ul li {
+            font-size: 1rem;
+        }
 
-@media only screen and (max-height: 770px) {
-    
-    #copy {
-        padding-right: .2rem;
-        font-size: .7rem;
-    }
+        #copy {
+            font-size: 0.4rem;
+        }
+        
 }
-*/
