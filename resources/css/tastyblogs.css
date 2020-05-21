@@ -95,11 +95,6 @@ main {
     font-style: italic;
 }
 
-#tb-nav-searchbox input,
-#tb-ft-searchbox input {
-    font-size: 2rem;
-}
-
 #tb-nav-searchbox button,
 #tb-ft-searchbox button {
     font-family: 'Montserrat', sans-serif;
