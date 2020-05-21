@@ -1,29 +1,13 @@
-/* Styles for HOME page */
-/* styles for Header, Footer, Body basics set in 'head-foot.css' */
-
-/*
-
-Fonts for Inspired Beyond Control:
-    font-family: 'IM Fell Great Primer SC', serif;
-    font-family: 'Josefin Slab', serif;
-
-Color Palette:
-    #2295D4 - inspired blue
-    #3178EB - bold blue
-    #F0FAFF - blue creme
-
-NEW inspired blue?   color: [10, 133, 250]
-
-*/
-
-
-/* Main section - Intro & Pic */
+/*****************************************************************
+    styles for Header, Footer, Main height set in 'head-foot.css'
+*****************************************************************/
 
 .intro {
     display: flex;
     justify-content: center;
     max-height: 70vh;
-    padding-top: 10vh; 
+    padding-top: 10vh;
+    padding-bottom: 3vh;
 }
 
 .intro p {
@@ -37,15 +21,58 @@ NEW inspired blue?   color: [10, 133, 250]
 }
 
 #myPic {
-    height: 45vh;
+    height: 50vh;
+    width: 15vw;
     border: 4px solid #F0FAFF;
+}
+
+#start-here {
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+#start-button {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 1.25rem;
+    color: #F0FAFF;
+    padding: .55rem .95rem;
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #F0FAFF;
+    border-radius: 10px;
+}
+
+#start-button:hover {
+    animation: start-here 500ms ease 0s infinite normal forwards running;
+}
+
+@keyframes start-here {
+    
+    0% {
+        background: linear-gradient(130deg, #000, #000, #FFFFB2);
+        transform: scale(1.1);
+    }
+    
+    30% {
+        background: linear-gradient(160deg, #FFA500, #FFC04C, #FFB732);
+        transform: scale(1.1);
+    }
+    
+    70% {
+        background: linear-gradient(120deg, #FFC04C, #000, #FFA500);
+        transform: scale(1.1);
+    }
+    
+    100% {
+        background: linear-gradient(110deg, #FFFFB2, #FFA500, #000);
+        transform: scale(1.1);
+    }  
 }
 
 /*************************
     MEDIA QUERIES
 *************************/
 
-/* Generic - Portrait */
+/* Portrait MQs */
 
 @media only screen and (orientation: portrait) {
     
@@ -64,19 +91,106 @@ NEW inspired blue?   color: [10, 133, 250]
     }
     
     #myPic {
-            height: 35vh;
-        } 
+        height: 30vh;
+        width: 17vw;
+    } 
+    
 }
-
-/* Responsive - MQs */
 
 @media only screen 
-    and (max-device-height : 414px)
-    and (orientation : landscape ) {
+    and (max-width: 770px)
+    and (orientation: portrait) {
+    
+        .intro p,
+        #start-button {
+            font-size: 1.25rem;
+        }
+
+        #myPic {
+            height: 25vh;
+            width: 17vw;
+        }
+
+         #start-button {
+            padding: .45rem .75rem;
+        }
+    
+}
+
+@media only screen 
+    and (max-width: 440px)
+    and (orientation: portrait) {
+    
+        .intro p,
+        #start-button {
+            font-size: .8rem;
+        }
+    
+}
+
+@media only screen 
+    and (max-width: 320px)
+    and (orientation: portrait) {
+        
+        #myPic {
+            display: none;
+        }
+        
+}
+
+
+/* Landscape MQs */
+
+@media only screen 
+    and (max-height: 770px)
+    and (orientation: landscape) {
         
         .intro p {
-            font-size: 1.25rem;
-            margin-top: 3vh;
-            margin-left: 0;
+            font-size: 1.563rem;
         }
+        
+        #myPic {
+            height: 40vh;
+            width: 14vw;
+        }
+        
+        #start-button {
+            font-size: 1rem;
+            padding: .45rem .75rem;
+        }
+        
 }
+
+@media only screen 
+    and (max-height: 540px)
+    and (orientation: landscape) {
+        
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .intro p {
+            font-size: 1rem;
+        }
+        
+        #myPic {
+            display: none;
+        }
+              
+}
+
+@media only screen 
+    and (max-height: 385px)
+    and (orientation: landscape) {
+        
+       .intro p,
+        #start-button {
+            font-size: .8rem;
+        }
+        
+}
+
+
+

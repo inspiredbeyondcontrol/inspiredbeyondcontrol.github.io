@@ -1,167 +1,166 @@
-/*===================================================================
-    * Styles for ABOUT page
-    * See'head-foot.css' for:
-        * styles for Header, Footer, Body basics 
-        * font family and type scale
-        * color palette for InspiredBeyondControl
-===================================================================*/
+/*****************************************************************
+    styles for Header, Footer, Main height set in 'head-foot.css'
 
-/*
+    Hunger No More Color Palette:
 
-Hunger No More Color Palette:
+        #F8B400 - wheat yellow
+        #785800 - bright brown
+        #786124 - faded brown
+        #4A4A36 - wheat grey
+        #FAF5E4 - wheat cream
 
-    #F8B400 - wheat yellow
-    #785800 - bright brown
-    #786124 - faded brown
-    #4A4A36 - wheat grey
-    #FAF5E4 - wheat cream
+    Hunger No More Font Families:
 
-Hunger No More Font Families:
-
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Baloo Bhai', cursive;
-
-*/
-
-
-/* Universal Styles */
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Baloo Bhai', cursive;
+*****************************************************************/
 
 main {
     font-family: 'Roboto', sans-serif;
-    color: #F8B400;
+    color: #786124;
     background-color: #4A4A36;
+    overflow: scroll;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
-
-.flex h3 {
-    white-space: nowrap;
+h3 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.75rem;
+    margin-left: 2vw;
 }
 
 main p {
     font-size: 1.15rem;
 }
 
-
-/* Section - Header */
-
-.hg-header {
-    border-bottom: 4px solid #F8B400;
-}
-
-.hg-header nav {
+#hg-header nav {
     margin-bottom: .35rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.hg-header img {
-    height: 12vh;
+#hg-logo {
+    height: 80%;
     margin-top: 2vh;
+    position: absolute;
+    left: 0;
 }
 
-.hg-header nav {
-    margin-top: 7%;
-    
-    text-align: end;
+#nav-icon,
+#cross-icon {
+    display: none;
 }
 
-.hg-header nav ul li {
-    margin-right: .75rem;
-    
-    font-size: 1.15rem;
+#dropdown-list ul,
+.hg-ftnav ul {
+    color: #F8B400;
+    display: flex;
+    justify-content: space-around;
 }
 
-.navLink:hover {
+.nav-link:hover {
     color: #000;
     background-color: #F8B400;
 }
 
+#hg-header {
+    position: relative;
+    height: 12vh;
+    max-width: 80vw;
+    margin-left: 10vw;
+}
 
-/* Section - Our Dream */
 
-.dream {
-    height: 30rem;
-    padding-top: 1.5%;
-    padding-bottom: 4.5%;
-    
-    color: #786124;
+#hg-header nav ul li {
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+#dream {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: #FAF5E4;
-    
-    border-bottom: 4px solid #786124;
+    border-bottom: 4px solid #4A4A36;
 }
 
-.dream h3 {
-    font-family: 'Baloo Bhai', cursive;
-    font-size: 2.75rem;
-    padding-top: 1.5rem;
-    margin-left: 20%;
-    margin-bottom: 2%;
+#dream h3 {
+    padding-top: 3vh;
+    margin-bottom: 1.2vh;
 }
 
-.dream p {
-    margin-left: 7%;
-    margin-bottom: 2%;
-    width: 55%;
-    
+#dream p {
+    margin-bottom: 2vh;
+    width: 40vw;
     line-height: 1.4;
 }
 
-.dream p span {
+#dream p span {
     font-weight: 900;
 }
 
-.dream img {
-    margin-right: 10%;
-    width: 30%;
+#dream img {
+    margin-right: 5vw;
+    height: 45vh;
+    width: 35vw;
     
     box-shadow: -5px 5px #4A4A36;
 }
 
-/* Section - Join Us */
-
-.joinUs {
-    height: 50rem;
-    
-    color: #786124;
-    
+#join-us {
     background-image: linear-gradient(rgba(242, 235, 226, 0.8), rgba(242, 235, 226, 0.8)), 
         url(../pics/volunteer-team.png);
     background-size: cover;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-.joinUs h3 {
-    font-family: 'Baloo Bhai', cursive;
-    font-size: 2.75rem;
-    padding-top: 7rem;
-    margin-bottom: 3rem;
+#join-us container {
+    display: flex;
+    justify-content: space-between;
 }
 
-#what {
-    margin-left: 15rem;
+#join-us h3 {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
 }
 
-#success {
-    margin-right: 10rem;
+#join-us p,
+#join-us ul { 
+    margin-bottom: 2vh; 
 }
 
-.joinUs p,
-.joinUs li {
-    width: 40rem;
+#join-us p {
+    width: 35vw;
     line-height: 1.4;
 }
 
-.joinUs p,
-.joinUs ul { 
-    margin-bottom: 2%; 
+#join-us li {
+    list-style-type: circle;
+    width: 25vw;
+    margin-left: 3vw;
 }
 
-quote {
+#join-us li:first-of-type {
+    line-height: 2.25;
+}
+
+#what {
+    margin-left: 2vw;
+}
+
+#accomplishments {
+    margin-right: 2vw;
+}
+
+#teach {
     font-style: italic;
+    margin-left: 5vw;
 }
 
-button {
+#join-us button {
     margin: 5rem auto;
     display: block;
     padding: .35rem 1.25rem;
@@ -175,22 +174,146 @@ button {
     border-radius: 20px;
 }
 
-/* Section - Footer */
-
-.hg-footer {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+#join-us button:hover {
+    transform: scale(1.2);
 }
 
+#hg-footer {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    height: 10vh;
+}
 
-/* Media Queries */
+#hg-footer ul li {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/*************************
+    MEDIA QUERIES
+*************************/
 
 @media only screen and (orientation: portrait) {
-    .hg-header,
-    .dream,
-    .joinUs,
-    .hg-footer{
+
+    #hg-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    #hg-logo {
+        margin-top: 0;
+    }
+    
+    #dropdown {
+        display: inline-block;
+        position: relative;
+        margin-left: 60vw;
+        margin-top: 10vh;
+    }
+    
+    #nav-icon {
+        display: block;
+        position: relative;
+        bottom: 5vh;
+        height: 10vh;
+        width: 10vw;
+    }
+    
+    #cross-icon {
+        position: relative;
+        bottom: 7vh;
+        left: 5vw;
+        height: 6vh;
+        width: 6vw;
+        z-index: 2;
+    }
+    
+    #dropdown-list ul {
+        position: relative;
+        top: 6rem;
+        display: inline-block;
+        text-align: right;
+        
+        background-color: #4A4A36;
+    }
+    
+    #dropdown-list {
+        display: none;
+        text-align: center;
+    }
+    
+    #hg-header nav ul li {
+        font-size: 1.563rem;
+        padding: .3rem .6rem;
+    }
+    
+    h3 {
+        font-size: 2.45rem;
+    }
+     
+    #dream,
+    #join-us container {
         display: block;
         text-align: center;
     }
+    
+    
+    #dream p,
+    #join-us p {
+        font-size: 1rem;
+        margin-left: 5vw;
+        width: 80vw;
+    }
+    
+    #dream {
+        padding-top: 2vh;
+    }
+    
+    #dream img {
+        height: 35vh;
+        width: 60vw;
+        margin-top: 3vh;
+    }
+    
+    #join-us li {
+        margin-left: 15vw;
+        width: 60vw;
+    }
+}
+
+@media only screen 
+    and (max-width: 680px)
+    and (orientation: portrait) {
+        
+        h3 {
+            font-size: 2.15rem;
+        }
+        
+        #dream p,
+        #join-us p {
+            font-size: .85rem;
+        }
+        
+}
+
+
+@media only screen 
+    and (max-height: 770px)
+    and (orientation: landscape) {
+        
+        h3 {
+            font-size: 2.25rem;
+        }
+        
+        main p {
+            font-size: 1rem;
+        }
+        
+        #dream h3 {
+            padding-top: 1vh;
+        }
+        
+        #join-us li {
+            font-size: .85rem;
+        }
 }

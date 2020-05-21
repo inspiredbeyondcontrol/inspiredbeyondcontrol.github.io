@@ -2,33 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Inspired Beyond Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="resources/css/reset.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC|Josefin+Slab&display=swap" rel="stylesheet">
         <link href="resources/css/head-foot.css" type="text/css" rel="stylesheet" />
         <link href="resources/css/index.css" type="text/css" rel="stylesheet" />
+        <title>Inspired Beyond Control by Chris Adams</title>
     </head>
     <body>
         <header>
             <h1>Inspired Beyond&nbsp;Control</h1>
             <h2>by Christopher&nbsp;Adams</h2>
         </header>
-        <main class="intro">
-            <p>
-                Hiya! I'm a self-driven &amp; passionate developer wanting to make a positive impact on the world through web development &amp;&nbsp;UX&nbsp;design.
-            </p>
-            <img id="myPic" src="resources/pics/me_working.jpeg" alt="pic of Christopher Adams, founder of Inspired Beyond Control" /> 
+        <main>
+            <container class="intro">
+                <p>
+                    Hello! I enjoy building websites and creating programs with Ruby. I'd like to invite you on a journey through my online&nbsp;portfolio. 
+                </p>
+                <img id="myPic" src="resources/pics/me_working.jpeg" alt="pic of Christopher Adams, founder of Inspired Beyond Control" />
+            </container> 
+            <div id="start-here">
+                <a href="pages/hunger.html">
+                   <button type="button" id="start-button">
+                        Start Journey!
+                    </button>
+                </a>
+            </div>
         </main>   
         <footer>
-            <nav>
-                <ul>
-                    <li class="fire"><a href="about.html">About Me</a></li>
-                    <li class="fire"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="fire"><a href="https://www.etsy.com/shop/InspiredBeyondCtrl" target="_blank">My Etsy Store</a></li> 
-                </ul>
-            </nav>
             <p id="copy">&copy; 2020 Christopher Adams</p>
+            <p id="foot-link"><a href="/pages/contact.html" class="fire">Contact Me</a></p>
         </footer>
     </body>
-    <script src="resources/js/changeMyPic.js"></script>
+    <script src="resources/js/inspired.js"></script>
 </html>

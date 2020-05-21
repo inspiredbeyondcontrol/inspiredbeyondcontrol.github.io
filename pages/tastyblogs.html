@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Tasty Blogs by Chris Adams</title>
-    <link href="../resources/css/reset.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC|Josefin+Slab&display=swap" rel="stylesheet">
-    <link href="../resources/css/head-foot.css" type="text/css" rel="stylesheet" />
-    <link href="../resources/css/tastyblogs.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
-    <header>
-            <h1>Inspired Beyond Control</h1>
-            <h2>by Christopher Adams</h2>
-    </header>
-    
-<!--    TastyBlogs BEGINS-->
-    <main>
-        <section class="tb-header">
-            <container class="tb-name">
-                <h3>Tasty Blogs</h3>
-                <h4>Official Site of Tasty Bakery</h4>
-            </container>
-            <container class="tb-nav">
-                <nav>
-                    <ul class="tb-nav">
-                        <li>Blogs by Category</li>
-                        <li>Shop</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </nav>
-                <div id="tb-searchbox">
-                    <input type="search">
-                    <button id="search">search</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../resources/css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC|Josefin+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,300&display=swap" rel="stylesheet">
+        <link href="../resources/css/head-foot.css" type="text/css" rel="stylesheet" />
+        <link href="../resources/css/tastyblogs.css" type="text/css" rel="stylesheet" />
+        <title>Tasty Blogs by Chris Adams</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="fire"><a href="../index.html">Inspired Beyond Control</a></h1>
+                <h2>by Christopher Adams</h2>
+        </header>
+
+    <!--    TastyBlogs BEGINS-->
+        <main>
+            <section id="tb-header">
+                <container class="tb-name">
+                    <h3>Tasty Blogs</h3>
+                    <p>Favorite Recipes Shared by Tasty Bakery fans</p>
+                </container>
+                <container class="tb-nav">
+                    <div id="dropdown">
+                        <img id="nav-icon" src="../resources/pics/nav-icon-cream.svg" onclick="show()">
+                        <img id="cross-icon" src="../resources/pics/cross-icon-cream.svg" onclick="hide()">
+                        <nav class="hg-nav" id="dropdown-list">
+                            <ul class="tb-nav">
+                                <li><a href="">Blogs by Category</a></li>
+                                <li><a href="">About Our Blog</a></li>
+                                <li><a href="">TastyBakery.com</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="tb-nav-searchbox">
+                        <input type="search" placeholder="search blogs">
+                        <button id="search"><a href="">Find Recipe</a></button>
+                    </div>
+                </container>
+            </section> 
+            <section class="tb-blogs">
+                <container>
+                     <article>
+                        <img src="../resources/pics/chocolate%20creme%20pie.jpg">
+                        <h5>Chocolate Creme&nbsp;Pie</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a,&nbsp;pede.</p>
+                    </article>
+                    <article>
+                        <img src="../resources/pics/very%20berry%20cheesecake.jpg">
+                        <h5>Very&nbsp;Berry Cheesecake</h5>
+                        <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus,&nbsp;metus.</p>
+                    </article>
+                    <article>
+                        <img src="../resources/pics/snickerdoodle%20cookies.jpg">
+                        <h5>Snickerdoodle Cookies</h5>
+                        <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet,&nbsp;nisi.</p>
+                    </article>
+                    <aside>
+                        <h4>Favorite Recipe of&nbsp;the&nbsp;Month</h4>
+                        <p id="fans">(voted by our fans)</p>
+                        <img src="../resources/pics/peanut%20butter%20cookies.jpg">
+                        <h5>Peanut Butter Cookies</h5>
+                        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras&nbsp;consequat.</p>
+                    </aside>
+                </container>
+            </section>
+            <section id="footer">
+                <div id="tb-ft-searchbox">
+                    <input type="search" placeholder="search our blogs">
+                    <button id="search"><a href="">Find Blog</a></button>
                 </div>
-            </container>
-        </section> 
-        <section class="tb-blogs">
-             <article>
-                <img src="../resources/pics/chocolate%20creme%20pie.jpg">
-                <h5>Chocolate Creme Pie</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-            </article>
-            <article>
-                <img src="../resources/pics/very%20berry%20cheesecake.jpg">
-                <h5>Very Berry Cheesecake</h5>
-                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-            </article>
-            <article>
-                <img src="../resources/pics/snickerdoodle%20cookies.jpg">
-                <h5>Snickerdoodle Cookies</h5>
-                <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
-            </article>
-            <aside>
-                <h6>Favorie Recipe of the Month</h6>
-                <img src="../resources/pics/peanut%20butter%20cookies.jpg">
-                <h6>Peanut Butter Cookies</h6>
-                <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-            </aside>
-        </section>
-    </main>  
-<!--    Tasty Blogs ENDS -->
-    
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../portfolio.html">Portfolio</a></li>
-                <li><a href="../about.html">About Me</a></li>
-                <li><a href="https://www.etsy.com/shop/InspiredBeyondCtrl" target="_blank">My Etsy Store</a></li>    
-            </ul>
-        </nav>
-        <p id="copy">&copy; 2020 Christopher Adams</p>
-    </footer>
-</body>   
+            </section>
+        </main>  
+    <!--    Tasty Blogs ENDS -->
+        <footer>
+            <p id="copy">&copy; 2020 Christopher Adams</p>
+            <p id="foot-link"><a href="ruby_scorekeeper.html" class="fire">Next Stop: Scorekeeper >>></a></p>
+        </footer>
+    </body>
+    <script src="../resources/js/inspired.js"></script>
 </html>

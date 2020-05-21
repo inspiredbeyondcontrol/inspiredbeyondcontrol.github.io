@@ -1,57 +1,47 @@
-/*===================================================================
-    * Styles for ABOUT page
-    * See'head-foot.css' for:
-        * styles for Header, Footer, Body basics 
-        * font family and type scale
-        * color palette for InspiredBeyondControl
-===================================================================*/
+/*****************************************************************
+    styles for Header, Footer, Main height set in 'head-foot.css'
 
-/*
-TastyBlogs color palette:
+    TastyBlogs color palette:
 
-#49260A - chocolate
-#623B1C - dark brown
-#CAAD8C - light brown
-#F6EDDD - cream
+    #49260A - chocolate
+    #623B1C - dark brown
+    #CAAD8C - light brown
+    #F6EDDD - cream
 
-*/
+    font-family: 'Montserrat', sans-serif
+        * Light 300
+        * Light 300 Italic
 
+*****************************************************************/
 
-/* Basic styles */
-
-.tb-name,
-.tb-blogs {
-    display: flex;
-}
-
-.tb-nav {
-    display: inline-flex;
-    white-space: nowrap;
-}
 
 main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
     color: #F6EDDD;
     background-color: #49260A;
-    
     padding-bottom: 3rem;
+    overflow: scroll;
 }
 
-main img {
-    height: 10rem;
-    width: 15rem;
-    margin-bottom: 5%;
+.tb-blogs img {
+    height: 25vh;
+    width: 32vh;
+    margin-bottom: 2vh;
 }
 
-.tb-header,
+#nav-icon,
+#cross-icon {
+    display: none;
+}
+
+#tb-header,
 .tb-blogs {
     padding-left: 2%;
     padding-right: 2%;
 }
 
-
-/* Section - TastyBlogs Header */
-
-.tb-header {
+#tb-header {
     margin: 2.5% 2.5% 5%;
     text-align: center;
     white-space: nowrap;
@@ -64,23 +54,28 @@ main img {
     margin-bottom: 1.75%;
 }
 
-
-.tb-nav li {
-    margin-right: 1.2rem;
-}
-
-main h3 {
+.tb-name h3 {
     font-family: yellowtail, cursive;
-    font-size: 5rem;
+    font-size: 3.052rem;
     letter-spacing: .2rem;
-    
     margin-right: 10%;
 }
 
-main h4 {
-    font-size: 2.15rem;
+.tb-name p {
+    font-size: 1rem;
     font-style: italic;
     color: #CAAD8C;
+}
+
+.tb-nav {
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+.tb-nav li {
+    font-size: .85rem;
+    margin-right: 1.2rem;
 }
 
 .tb-nav li:hover {
@@ -89,92 +84,228 @@ main h4 {
     text-decoration: underline;
 }
 
-#tb-searchbox {
-    margin-left: 7%;
+#tb-nav-searchbox,
+#tb-ft-searchbox {
+    margin-left: 7vw;
 }
 
-/* Section - Tasty Blogs articles */
-
-.tb-blogs {
-    justify-content: space-around;
-    margin-left: 5%;
-    margin-right: 5%;
+#tb-nav-searchbox input::placeholder,
+#tb-ft-searchbox input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
 
-main h5 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+#tb-nav-searchbox input,
+#tb-ft-searchbox input {
+    font-size: 2rem;
 }
 
-main h6 {
-    font-size: 1.5rem;
+#tb-nav-searchbox button,
+#tb-ft-searchbox button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+    font-weight: 300;
+    color: #49260A;
+    background-color: #CAAD8C;
+    margin-left: .5vw;
+}
+
+.tb-blogs h4,
+.tb-blogs h5,
+#fans {
+    text-align: center;
     margin-bottom: .7rem;
 }
 
-
-
-main h4,
-main h5,
-main h6 {
-    text-align: center;
+.tb-blogs h4 {
+    font-size: 1.25rem;
+/*    margin-bottom: 1.5rem;*/
 }
 
+.tb-blogs h5 {
+    font-size: 1rem;
+    
+}
+
+.tb-blogs container {
+    justify-content: space-around;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.tb-name,
+.tb-blogs container {
+    display: flex;
+}
+
+
 .tb-blogs article {
-    margin-right: 5%;
+    margin-right: 3vw;
 }
 
 .tb-blogs aside {
-    margin-left: 10%;
+    margin-left: 7vw;
+}
+
+.tb-blogs p {
+    font-weight: 100;
 }
 
 
-/* Media Queries */
+#tb-ft-searchbox {
+        display: none;
+}
 
 @media only screen and (orientation: portrait) {
     
-    .tb-header,
+    #tb-header,
     .tb-name,
     .tb-nav,
-    .tb-blogs {
+    .tb-blogs container {
         display: block;
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     
-    main img {
-        height: 9rem;
-        width: 12rem;
-        margin-bottom: 1%;
+    .tb-name h3 {
+        font-size: 4rem;
+        margin-top: 4vh;
+        margin-left: 4vh;
     }
     
-    main h3 {
-        font-size: 2.55rem;
+    .tb-name p {
+        font-size: .8rem;
+        margin-top: 2vh;
+        margin-right: 2vh;
+        margin-bottom: 7vh;
+    }
+       
+    #dropdown {
+        position: absolute;
+        top: 15vh;
+        left: 1;
+        height: 10vh;
+        width: 10vw;
     }
 
-    main h4 {
-        font-size: 1.35rem;
-    }
-    
-    main h5 {
-        font-size: 1.15rem;
+    #nav-icon {
+        display: block;
+        height: 10vh;
+        width: 10vw;
     }
 
-    main h6 {
-        font-size: 1.05rem;
+    #cross-icon {
+        position: relative;
+        height: 6vh;
+        width: 6vw;
+    }
+
+    #dropdown-list ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    #dropdown-list {
+        display: none;
+    }
+    
+    .tb-nav li {
+        font-size: 1.25rem;
+        background-color: #49260A;
+        padding: 1.4vh 2.2vw;
+    }
+    
+    #tb-nav-searchbox {
+        display: none;
+    }
+    
+    .tb-blogs h4 {
+            font-size: 1.953rem;
+    }
+  
+    .tb-blogs img {
+        height: 30vh;
+        width: 45vh;
+        margin-bottom: 2vh;
     }
     
     .tb-blogs article {
-        
+        margin-bottom: 10vh;
     }
     
-    .tb-nav li,
     .tb-blogs p {
-        font-size: .85rem;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
     
-    aside {
+    .tb-blogs aside {
         margin-left: 0;
         margin-right: 0;
         padding-bottom: 1rem;
     }
     
+    
+    #tb-ft-searchbox {
+        display: block;
+        text-align: center;
+    }
+    
+    #tb-ft-searchbox input {
+        width: 40vw;
+        margin-top: 5vh;
+    }
+    
+}
+
+@media only screen 
+    and (max-width: 680px)
+    and (orientation: portrait) {
+        
+        .tb-nav li {
+            font-size: 1rem;
+        }
+        
+        .tb-name h3 {
+            font-size: 2.4rem;
+        }
+        
+        .tb-name p {
+            font-size: .65rem;
+        }
+        
+        .tb-blogs h4 {
+            font-size: 1.25rem;
+        }
+        
+        .tb-blogs img {
+            height: 27vh;
+            width: 36vh;
+        }
+        
+        .tb-blogs {
+            font-size: .7rem;
+        }
+}
+
+@media only screen 
+    and (max-height: 770px)
+    and (orientation: landscape) {
+        
+        .tb-blogs h4 {
+            font-size: 1rem;
+        }
+        
+        .tb-blogs h5 {
+            font-size: .8rem;
+        }
+        
+        .tb-nav li,
+        #tb-nav-searchbox button,
+        .tb-blogs {
+            font-size: .65rem;
+        }
+        
 }
