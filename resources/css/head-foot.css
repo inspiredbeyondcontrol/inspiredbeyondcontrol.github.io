@@ -39,7 +39,7 @@ html {
     font-family: 'Merriweather', serif;
     font-size: 18px;
     color: #F0FAFF; 
-    max-width: 100%;
+    max-width: 100vw;
 }
 
 header,

@@ -102,15 +102,19 @@ main p {
 }
 
 #dream img {
+    height: 30vh;
+    width: 35vw;
+    margin-top: 5vh;
     margin-right: 5vw;
-    width: 50vh;
-    
     box-shadow: -5px 5px #4A4A36;
 }
 
 #join-us {
     background-image: linear-gradient(rgba(242, 235, 226, 0.8), rgba(242, 235, 226, 0.8)), 
         url(../pics/volunteer-team.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -188,9 +192,6 @@ main p {
     padding-right: .5rem;
 }
 
-/*************************
-    MEDIA QUERIES
-*************************/
 
 @media only screen and (orientation: portrait) {
 
@@ -269,6 +270,7 @@ main p {
     }
     
     #dream img {
+        height: 30vh;
         width: 60vw;
         margin-top: 3vh;
     }
@@ -309,6 +311,12 @@ main p {
         
         #dream h3 {
             padding-top: 1vh;
+        }
+        
+        #dream img {
+            height: 35vh;
+            width: 30vw;
+            margin-top: 10vh;
         }
         
         #join-us li {
