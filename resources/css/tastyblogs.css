@@ -285,7 +285,7 @@ main {
 }
 
 @media only screen 
-    and (max-height: 770px)
+    and (max-height: 700px)
     and (orientation: landscape) {
         
         .tb-blogs h4 {
@@ -300,6 +300,27 @@ main {
         #tb-nav-searchbox button,
         .tb-blogs {
             font-size: .65rem;
+        }
+}
+
+@media only screen 
+    and (max-height: 550px)
+    and (orientation: landscape) {
+        
+        .tb-name {
+            display: block;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .tb-name h3 {
+            margin-left: 3vw;
+            margin-bottom: 1.5vh;
+        }
+        
+        .tb-name p {
+            font-size: .85rem;
         }
         
 }
