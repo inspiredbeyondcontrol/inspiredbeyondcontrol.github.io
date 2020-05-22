@@ -103,8 +103,7 @@ main p {
 
 #dream img {
     margin-right: 5vw;
-    height: 45vh;
-    width: 35vw;
+    width: 50vh;
     
     box-shadow: -5px 5px #4A4A36;
 }
@@ -270,7 +269,6 @@ main p {
     }
     
     #dream img {
-        height: 35vh;
         width: 60vw;
         margin-top: 3vh;
     }

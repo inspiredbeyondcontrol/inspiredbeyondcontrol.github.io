@@ -1,6 +1,6 @@
 // INDEX: switch picture from b&w to color and back
 
-let myPic = document.getElementById("myPic");
+var myPic = document.getElementById("myPic");
 
 myPic.addEventListener("mouseenter", function(){
   myPic.src = "resources/pics/me_working_vivid.jpeg";
@@ -12,7 +12,7 @@ myPic.addEventListener("mouseout", function(){
 
 // CONTACT:  switch picture from b&w to color and back
 
-let myContactPic = document.getElementById("myContactPic");
+var myContactPic = document.getElementById("myContactPic");
 
 myContactPic.addEventListener("mouseenter", function(){
   myContactPic.src = "../resources/pics/me_working_vivid.jpeg";
@@ -24,7 +24,7 @@ myContactPic.addEventListener("mouseout", function(){
 
 // INDEX: change words in start journey button
 
-let startJourney = document.getElementById("start-button");
+var startJourney = document.getElementById("start-button");
 
 startJourney.addEventListener("mouseenter", function(){
   startJourney.innerText = "Hit the Gas!";
