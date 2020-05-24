@@ -90,8 +90,16 @@ function hide() {
      }
 }
 
-// HUNGER: Alert box for Logo
+// HUNGER & TASTY: Show-hide project description section
 
-function logoAlert() {
-    alert("I created this logo!");
+function expand() {;
+    document.getElementById("description").style.width = "70vw";
+    document.getElementById("left-arrow").style.display = "none";
+    document.getElementById("right-arrow").style.display = "block";
+}
+
+function condense() {
+    document.getElementById("description").style.width = "5vw";
+    document.getElementById("left-arrow").style.display = "block";
+    document.getElementById("right-arrow").style.display = "none";
 }

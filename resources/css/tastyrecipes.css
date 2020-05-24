@@ -20,6 +20,7 @@ main {
     font-size: .8rem;
     color: #F6EDDD;
     background-color: #49260A;
+    height: 88vh;
     overflow: scroll;
 }
 
@@ -155,6 +156,45 @@ main {
 #tb-ft-searchbox {
         display: none;
 }
+
+
+#description {
+    display: flex;
+    background-color: #FAF5E4;
+    height: 80vh;
+    width: 5vw;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    color: #49260A;
+    transition: width 1s ease-in-out;
+}
+
+#description img {
+    height: 8%;
+    margin-top: 30vh;
+}
+
+#right-arrow {
+    display: none;
+}
+
+#description h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+#description p {
+    font-size: 1rem;
+    margin-left: 3.5vw;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vh;
+}
+
+
 
 @media only screen and (orientation: portrait) {
     
