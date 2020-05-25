@@ -3,7 +3,7 @@
 *****************************************************************/
 
 
-#myContactPic {
+#myPic {
     height: 50vh;
     position: fixed;
     top: 25vh;
@@ -101,7 +101,7 @@ section {
     and (min-width : 376px)
     and (orientation : portrait) {
     
-        #myContactPic {
+        #myPic {
             display: none;
         }
 
@@ -183,7 +183,7 @@ section {
     and (max-device-height : 414px)
     and (orientation : landscape ) {
         
-        #myContactPic {
+        #myPic {
             height: 50vh;
             position: sticky;
             top: 3rem;

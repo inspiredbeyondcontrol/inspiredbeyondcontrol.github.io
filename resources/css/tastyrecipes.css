@@ -21,7 +21,6 @@ main {
     color: #F6EDDD;
     background-color: #49260A;
     height: 88vh;
-    overflow: scroll;
 }
 
 .tb-blogs img {
@@ -37,8 +36,8 @@ main {
 
 #tb-header,
 .tb-blogs {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #tb-header {
@@ -55,8 +54,8 @@ main {
 .tb-name {
     align-items: baseline;
     text-align: center;
-    margin-left: 17%;
-    margin-bottom: 1.75%;
+    margin-left: 17vw;
+    margin-bottom: 1.75vh;
 }
 
 .tb-name h3 {
@@ -134,7 +133,7 @@ main {
 }
 
 .tb-blogs article {
-    margin-right: 3vw;
+    margin-right: 2vw;
 }
 
 .tb-blogs article p:last-of-type,
@@ -145,7 +144,7 @@ main {
 }
 
 .tb-blogs aside {
-    margin-left: 7vw;
+    margin-left: 3vw;
 }
 
 .tb-blogs p {
@@ -157,17 +156,16 @@ main {
         display: none;
 }
 
-
 #description {
     display: flex;
-    background-color: #FAF5E4;
-    height: 80vh;
+    background-color: #49260A;
+    height: 60vh;
     width: 5vw;
     position: absolute;
-    top: 5vh;
+    top: 7vh;
     right: 0;
-    color: #49260A;
     transition: width 1s ease-in-out;
+    overflow: hidden;
 }
 
 #description img {
@@ -180,11 +178,11 @@ main {
 }
 
 #description h4 {
-    font-size: 1.25rem;
+    font-size: 1.563rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 4vh;
-    margin-bottom: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
 }
 
 #description p {
@@ -192,6 +190,7 @@ main {
     margin-left: 3.5vw;
     margin-right: 1.5vw;
     margin-bottom: 1.5vh;
+    line-height: 1.2;
 }
 
 
@@ -284,9 +283,12 @@ main {
     .tb-blogs aside {
         margin-left: 0;
         margin-right: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 1vh;
     }
     
+    #tb-footer {
+        padding-bottom: 10vh;
+    }
     
     #tb-ft-searchbox {
         display: block;

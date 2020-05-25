@@ -197,12 +197,13 @@ main p {
 #description {
     display: flex;
     background-color: #FAF5E4;
-    height: 80vh;
+    height: 60vh;
     width: 5vw;
     position: absolute;
     top: 5vh;
     right: 0;
     transition: width 1s ease-in-out;
+    overflow: hidden;
 }
 
 #description img {
@@ -226,6 +227,7 @@ main p {
     margin-left: 3.5vw;
     margin-right: 1.5vw;
     margin-bottom: 1.5vh;
+    line-height: 1.2;
 }
 
 

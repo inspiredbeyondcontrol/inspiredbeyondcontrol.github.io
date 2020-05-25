@@ -1,4 +1,4 @@
-// INDEX: switch picture from b&w to color and back
+// INDEX & CONTACT: switch picture from b&w to color and back
 
 var myPic = document.getElementById("myPic");
 
@@ -8,18 +8,6 @@ myPic.addEventListener("mouseenter", function(){
 
 myPic.addEventListener("mouseout", function(){
   myPic.src = "resources/pics/me_working.jpeg";
-});
-
-// CONTACT:  switch picture from b&w to color and back
-
-var myContactPic = document.getElementById("myContactPic");
-
-myContactPic.addEventListener("mouseenter", function(){
-  myContactPic.src = "../resources/pics/me_working_vivid.jpeg";
-});
-
-myContactPic.addEventListener("mouseout", function(){
-  myContactPic.src = "../resources/pics/me_working.jpeg";
 });
 
 // INDEX: change words in start journey button
@@ -93,7 +81,7 @@ function hide() {
 // HUNGER & TASTY: Show-hide project description section
 
 function expand() {;
-    document.getElementById("description").style.width = "70vw";
+    document.getElementById("description").style.width = "65vw";
     document.getElementById("left-arrow").style.display = "none";
     document.getElementById("right-arrow").style.display = "block";
 }
