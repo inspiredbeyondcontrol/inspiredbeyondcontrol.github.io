@@ -81,13 +81,15 @@ function hide() {
 // HUNGER & TASTY: Show-hide project description section
 
 function expand() {;
-    document.getElementById("description").style.width = "65vw";
+    document.getElementById("description").style.width = "75vw";
+    document.getElementById("description").style.overflow = "scroll";
     document.getElementById("left-arrow").style.display = "none";
     document.getElementById("right-arrow").style.display = "block";
 }
 
 function condense() {
     document.getElementById("description").style.width = "5vw";
+    document.getElementById("description").style.overflow = "hidden";
     document.getElementById("left-arrow").style.display = "block";
     document.getElementById("right-arrow").style.display = "none";
 }
