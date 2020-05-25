@@ -337,6 +337,15 @@ main p {
     and (max-height: 770px)
     and (orientation: landscape) {
         
+        main {
+            height: 100%;
+        }
+        
+        #nav-icon,
+        #cross-icon {
+            display: none;
+        }
+
         h3 {
             font-size: 2.25rem;
         }

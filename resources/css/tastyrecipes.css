@@ -354,6 +354,19 @@ main {
     and (max-height: 700px)
     and (orientation: landscape) {
         
+        main {
+            height: 100%;
+        }
+        
+        #nav-icon,
+        #cross-icon {
+            display: none;
+        }
+
+        #tb-header {
+            padding-top: 1.2vh;  
+        }
+        
         .tb-blogs h4 {
             font-size: 1rem;
         }
