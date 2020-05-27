@@ -34,7 +34,7 @@ main {
 
 .tb-blogs img {
     height: 25vh;
-    width: 32vh;
+    width: 35vh;
     margin-bottom: 2vh;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 #tb-header {
-    padding-top: 2vh;
+    padding-top: 2.5vh;
     padding-bottom: 7vh;
     text-align: center;
     white-space: nowrap;
@@ -72,7 +72,7 @@ main {
     font-family: 'Yellowtail', cursive;
     font-size: 3.052rem;
     letter-spacing: .2rem;
-    margin-right: 10%;
+    margin-right: 10vw;
 }
 
 .tb-name p {
@@ -128,7 +128,6 @@ main {
 
 .tb-blogs h4 {
     font-size: 1.25rem;
-/*    margin-bottom: 1.5rem;*/
 }
 
 .tb-blogs h5 {
@@ -137,13 +136,17 @@ main {
 }
 
 .tb-blogs container {
-    justify-content: space-around;
     margin-left: 4vw;
     margin-right: 4vw;
 }
 
+.tb-blogs article,
+.tb-blogs aside {
+    width: 35vw;
+}
+
 .tb-blogs article {
-    margin-right: 2vw;
+    margin-right: 3vw;
 }
 
 .tb-blogs article p:last-of-type,
@@ -154,7 +157,7 @@ main {
 }
 
 .tb-blogs aside {
-    margin-left: 3vw;
+    margin-left: 1vw;
 }
 
 .tb-blogs p {
@@ -220,14 +223,14 @@ main {
     .tb-name,
     .tb-nav,
     .tb-blogs container,
+    .tb-blogs article,
     .tb-blogs aside,
     .tb-footer {
         display: block;
         text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+        margin: auto;
+        padding: auto;
+        width: auto;
     }
     
     .tb-name h3 {
@@ -283,7 +286,11 @@ main {
     }
     
     .tb-blogs h4 {
-            font-size: 1.953rem;
+        font-size: 1.953rem;
+    }
+    
+    .tb-blogs h5 {
+        font-size: 1.25rem;
     }
   
     .tb-blogs img {
@@ -339,7 +346,8 @@ main {
             font-size: .65rem;
         }
         
-        .tb-blogs h4 {
+        .tb-blogs h4,
+        .tb-blogs h5 {
             font-size: 1.25rem;
         }
         
@@ -367,7 +375,12 @@ main {
         }
 
         #tb-header {
-            padding-top: 1.2vh;  
+            padding-top: 2.7vh;
+        }
+        
+        .tb-name h3,
+        .tb-name h4 {
+            margin: auto;
         }
         
         .tb-blogs h4 {
