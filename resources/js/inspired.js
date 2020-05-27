@@ -82,7 +82,7 @@ function hide() {
 
 function expand() {;
     document.getElementById("description").style.width = "75vw";
-    document.getElementById("description").style.overflow = "scroll";
+    document.getElementById("description").style.overflow = "auto";
     document.getElementById("left-arrow").style.display = "none";
     document.getElementById("right-arrow").style.display = "block";
 }

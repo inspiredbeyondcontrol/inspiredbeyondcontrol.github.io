@@ -169,7 +169,7 @@ main {
     height: 60vh;
     width: 5vw;
     position: absolute;
-    top: 7vh;
+    top: 5vh;
     right: 0;
     transition: width 1s ease-in-out;
     overflow: hidden;
@@ -190,11 +190,11 @@ main {
 }
 
 #description h4 {
-    font-size: 1.563rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
     margin-top: 5vh;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
 }
 
 #description p {

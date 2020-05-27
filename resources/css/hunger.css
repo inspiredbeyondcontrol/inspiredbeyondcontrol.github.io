@@ -19,7 +19,6 @@ main {
     font-family: 'Roboto', sans-serif;
     color: #786124;
     background-color: #4A4A36;
-    overflow: scroll;
     position: relative;
 }
 
@@ -199,7 +198,7 @@ main p {
     height: 60vh;
     width: 5vw;
     position: absolute;
-    top: 5vh;
+    top: 0;
     right: 0;
     transition: width 1s ease-in-out;
     overflow: hidden;
