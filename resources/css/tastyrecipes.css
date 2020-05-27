@@ -1,18 +1,21 @@
 /*****************************************************************
     styles for Header, Footer, Main height set in 'head-foot.css'
 
-    TastyBlogs color palette:
+    TastyRecipes color palette:
 
     #49260A - chocolate
     #623B1C - dark brown
     #CAAD8C - light brown
     #F6EDDD - cream
 
-    font-family: 'Yellowtail', cursive;
+    Font Families:
 
-    font-family: 'Montserrat', sans-serif
-        * Light 300
-        * Light 300 Italic
+    title:
+        font-family: 'Yellowtail', cursive;
+    body:
+        font-family: 'Montserrat', sans-serif
+            * Light 300
+            * Light 300 Italic
 
 *****************************************************************/
 
