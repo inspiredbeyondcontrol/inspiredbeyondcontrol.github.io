@@ -72,7 +72,7 @@ main {
 #landscape-img,
 #portrait-img {
     height: 30vh;
-    width: 42vh;
+    margin-top: 2vh;
     margin-right: 7vw;
     margin-bottom: 2vh;
 }
@@ -130,10 +130,8 @@ main {
     .tb-name {
         display: block;
         text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+        margin: auto;
+        padding: auto;
     }
     
     .tb-name h3 {
@@ -161,7 +159,7 @@ main {
 
     #portrait-img {
         display: block;
-        margin-left: 20vw;
+        margin: auto;
     }
     
     #portrait-img,
@@ -173,8 +171,8 @@ main {
     #choc-recipe ul,
     #choc-recipe ol,
     #choc-recipe p {
-        margin-left: 13vw;
-        margin-right: 10vw;
+        margin-left: 20vw;
+        margin-right: 15vw;
     }
     
     #choc-recipe h5 {
@@ -183,7 +181,7 @@ main {
     
     #choc-recipe button {
         margin-top: 5vh;
-        margin-left: 30vw;
+        margin-left: 40vw;
     }
 }
 
@@ -197,6 +195,14 @@ main {
         
         .tb-name p {
             font-size: .65rem;
+        }
+        
+        #choc-recipe h4 {
+            font-size: 1.953rem;
+        }
+        
+        #portrait-img {
+            height: 25vh;
         }
       
 }
