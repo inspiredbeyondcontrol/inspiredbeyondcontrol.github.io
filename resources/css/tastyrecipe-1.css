@@ -149,7 +149,7 @@ main {
     
     #choc-recipe {
         display: block;
-        margin: 0;
+        margin: auto;
         padding-bottom: 10vh;
     }
       
@@ -181,7 +181,7 @@ main {
     
     #choc-recipe button {
         margin-top: 5vh;
-        margin-left: 40vw;
+        margin-left: 35vw;
     }
 }
 
@@ -203,6 +203,10 @@ main {
         
         #portrait-img {
             height: 25vh;
+        }
+        
+        #choc-recipe button {
+            margin-left: 30vw;
         }
       
 }
