@@ -54,5 +54,22 @@ main video {
         width: 80vw;
         margin-left: 10vw;
     }
-    
+}
+
+@media only screen 
+    and (max-height: 770px)
+    and (orientation: landscape) {
+        
+        main h3 {
+            font-size: 2.441rem;
+        }
+
+        main h4 {
+            font-size: .75rem;
+        }
+
+        main p {
+            font-size: .85rem;
+        }
+
 }
