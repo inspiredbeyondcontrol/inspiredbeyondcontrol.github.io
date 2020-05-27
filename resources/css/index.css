@@ -2,6 +2,10 @@
     styles for Header, Footer, Main height set in 'head-foot.css'
 *****************************************************************/
 
+main {
+    height: 90vh;
+}
+
 .intro {
     display: flex;
     justify-content: center;
