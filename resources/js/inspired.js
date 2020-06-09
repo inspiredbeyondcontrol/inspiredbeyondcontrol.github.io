@@ -22,7 +22,7 @@ startJourney.addEventListener("mouseout", function(){
   startJourney.innerText = "Start Journey!";
 });
 
-// HUNGER, TASTYBLOGS: dropdown menu
+// HUNGER: dropdown menu
 
 function show() {
     var nav_icon = document.getElementById("nav-icon");
@@ -78,7 +78,7 @@ function hide() {
      }
 }
 
-// HUNGER & TASTY: Show-hide project description section
+// HUNGER: Show-hide project description section
 
 function expand() {;
     document.getElementById("description").style.width = "75vw";
